@@ -234,5 +234,3 @@ G4PWnw4um1hK8G3POZMQ57U=
         </div>
     );
 }
-
-//Changes

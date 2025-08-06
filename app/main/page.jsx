@@ -55,7 +55,15 @@ Sx6mLvdA2otutx7CdGhnceks8JhLxLiXUodzhg8RYu9FsWpeB3vKz6fXFx6m68wF
 G4PWnw4um1hK8G3POZMQ57U=
             -----END PRIVATE KEY-----`;
 
-            const serverPublicKeyPem = await fetch('/keys/server-public.pem').then(res => res.text());
+            const serverPublicKeyPem = `-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwM+ZE/WI5SIqb+nT7k67
+EyRc41NGYjtftSlMvIokp4yFB6UiNEdDGUg/VbGTOjQDe7tA19csVjFd7ABp7k1Q
+L94DbhlLKgNykiIOfJExA8npKKRJeUUClEwEbXhHPzO1WQR5l0MUbJPmxgwS8zsD
+PC8rEiKZoHucSchIq8CPQckA6IVHgorcdZ6U/0L0Qf4glqhRh2jh79dPDbyrnKP5
+nMakDNk2AGhprzeUOD6mdLyDVgrpHc+qgEMQiTQ7SczaVl3NRyArUxDA0fiLiFTv
+Hr6RhYLZiTxndPeArtV5REGLJJPYYgdpiqg71/OSP0J92sZHXOHqCGc7uNltjuyB
+/wIDAQAB
+-----END PUBLIC KEY-----`;
 
             const clientPrivateKey = forge.pki.privateKeyFromPem(clientPrivateKeyPem);
             const serverPublicKey = forge.pki.publicKeyFromPem(serverPublicKeyPem);

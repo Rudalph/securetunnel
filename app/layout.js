@@ -1,5 +1,6 @@
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 
 const spacegrotesk = Space_Grotesk({
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body
         className={spacegrotesk.className}
       >
+        <Navbar />
         {children}
       </body>
     </html>

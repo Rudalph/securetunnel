@@ -84,7 +84,7 @@ xQIDAQAB
     console.log('✅ Server received and verified:', message);
 
     // Step 4: Prepare server response
-    const responseMessage = 'Hello from Server!';
+    const responseMessage = `I am server. Your message was: ${message}`;
     const responseMd = forge.md.sha256.create();
     responseMd.update(responseMessage, 'utf8');
 

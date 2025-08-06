@@ -207,7 +207,7 @@ Hr6RhYLZiTxndPeArtV5REGLJJPYYgdpiqg71/OSP0J92sZHXOHqCGc7uNltjuyB
                             📬 <span>Server Response</span>
                         </h2>
                         <div className="bg-gray-50 p-4 rounded-lg">
-                            <pre className="text-sm text-gray-800 overflow-auto whitespace-pre-wrap">{JSON.stringify(serverEncryptedResponse, null, 2)}</pre>
+                            <div className="text-sm text-gray-800 overflow-auto whitespace-pre-wrap">{JSON.stringify(serverEncryptedResponse, null, 2)}</div>
                         </div>
                     </div>
 
@@ -216,7 +216,7 @@ Hr6RhYLZiTxndPeArtV5REGLJJPYYgdpiqg71/OSP0J92sZHXOHqCGc7uNltjuyB
                             🔓 <span>Decrypted Message</span>
                         </h2>
                         <div className="bg-green-50 border border-green-200 p-4 rounded-lg">
-                            <pre className="text-sm text-green-800 font-medium">{decryptedServerResponse}</pre>
+                            <div className="text-sm text-green-800 font-medium">{decryptedServerResponse}</div>
                         </div>
                     </div>
 
